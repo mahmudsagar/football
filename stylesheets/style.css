@@ -1,0 +1,12 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:wght@400;500;700&display=swap");
+
+/* common styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* font-family: 'Niconne', cursive; */
+    font-family: "Poppins", sans-serif;
+}
