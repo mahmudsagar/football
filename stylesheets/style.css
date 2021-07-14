@@ -147,8 +147,7 @@ header a {
 /* hero section mobile style starts */
 @media (max-width: 501px) {
     .hero {
-        grid-template-columns: none;
-        width: 100%;
+        justify-items: start;
     }
     .hero__content {
         margin-bottom: 50px;
