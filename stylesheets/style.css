@@ -179,6 +179,7 @@ header a {
     box-shadow: var(--card-box-shadow);
     background-color: var(--card-bg-color);
     height: 29.625rem;
+    overflow: hidden;
 }
 
 .card__header {
