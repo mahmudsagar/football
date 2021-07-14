@@ -6,6 +6,10 @@
     --header-bg-color: hsl(244, 62%, 39%);
     --header-text-color: hsl(0, 0%, 100%);
     --btn-bg-color: hsla(338, 75%, 53%, 1);
+    --card-box-shadow-color: hsla(0, 0%, 0%, 0.15);
+    --card-bg-color: hsl(0, 0%, 100%);
+    --card-heading-color: hsl(231, 13%, 11%);
+    --card-content-color: hsl(0, 0%, 42%);
 }
 
 * {
@@ -21,6 +25,9 @@ ul {
 }
 a {
     text-decoration: none;
+}
+img{
+    width: 100%;
 }
 .btn {
     background-color: var(--btn-bg-color);
@@ -87,7 +94,7 @@ header a {
     transition: all 0.5s ease-in-out;
 }
 .watch-btn:hover {
-    color: black;
+    color: var(--card-heading-color);
 }
 
 /* header tablet & mobile style */
@@ -97,7 +104,7 @@ header a {
         padding-right: 1rem;
     }
     /* navbar style for mobile & tablet starts */
-    nav {
+    .nav {
         width: 100%;
     }
     .nav__btn {
@@ -141,6 +148,54 @@ header a {
 /* hero section mobile style ends */
 /* main section style starts */
 /* Card style starts */
+.card_container{
+    width: 65.625rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,330px);
+    grid-column-gap: 1.875rem;
+    grid-row-gap: 1.6875rem;
+    margin-bottom: 8.75rem;
+}
+
+.card{
+    padding: 15px;
+    box-shadow: 0px 0px 40px var(--card-box-shadow-color);
+    background-color: var(--card-bg-color);
+    height: 29.625rem;
+}
+
+.card__header{
+    font-size: 1.75rem;
+    line-height: 4.5rem;
+    text-transform: capitalize;
+    color: var(--card-heading-color);
+}
+.card__content{
+    color: var(--card-content-color);
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+/* card tablet styles starts */
+@media (max-width: 769px) {
+    .card_container{
+        grid-template-columns: repeat(2,330px);
+        width: 100%;
+        justify-content: center;
+    }
+    
+}
+/* card tablet styles ends */
+/* card mobile styles starts */
+@media (max-width: 501px) {
+    .card_container{
+        grid-template-columns: repeat(1,330px);
+    }
+    
+}
+/* card mobile styles ends */
+
 
 /* Card style ends */
 
